@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "com.favouriteless.moreimmersiveaircraft.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "moreimmersiveaircaft.refmap.json",
+  "mixins": [
+    "MixinVehicleEntity"
+  ],
+  "client": [
+  ],
+  "minVersion": "0.8"
+}
