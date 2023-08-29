@@ -20,7 +20,8 @@ public class MixinVehicleEntity {
 			aircraft.level().explode(aircraft, aircraft.getX(), aircraft.getY(), aircraft.getZ(),
 					MoreImmersiveAircraftCommonConfig.CRASH_EXPLOSION_RADIUS.get().floatValue(),
 					MoreImmersiveAircraftCommonConfig.CRASH_EXPLOSION_FIRE.get(),
-					ExplosionInteraction.MOB);
+					MoreImmersiveAircraftCommonConfig.CRASH_BLOCK_DESTRUCTION.get() ? ExplosionInteraction.MOB : ExplosionInteraction.NONE);
+
 		}
 	}
 
