@@ -1,5 +1,6 @@
 package com.favouriteless.moreimmersiveaircraft;
 
+import com.favouriteless.moreimmersiveaircraft.common.network.MIAPackets;
 import com.mojang.logging.LogUtils;
 import immersive_aircraft.Main;
 import immersive_aircraft.item.UpgradeItem;
@@ -21,6 +22,7 @@ public class MoreImmersiveAircraft {
 
     public MoreImmersiveAircraft() {
         ModLoadingContext.get().registerConfig(Type.COMMON, MIACommonConfig.SPEC);
+        MIAPackets.registerPackets();
     }
 
 }
